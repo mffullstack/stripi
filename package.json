@@ -1,3 +1,4 @@
+
 {
   "name": "strapi-temp",
   "version": "0.1.0",
@@ -32,11 +33,8 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": ">=22.0.0 <=26.x.x",
+    "node": "22.x",
     "npm": ">=6.0.0"
-  },
-  "strapi": {
-    "uuid": "956b6796-d4e3-43ee-8e62-d3a784a0f605",
-    "installId": "19700dfd8a05442151374f180e8844291d028ffcd46f6935422bc4d8d895c32c"
   }
 }
+
