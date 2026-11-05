@@ -1,5 +1,14 @@
 
-export default ({ env }) => ({
+type Env = {
+  (key: string, defaultValue?: string): string;
+  int(key: string, defaultValue?: number): number;
+};
+
+type ConfigContext = {
+  env: Env;
+};
+
+export default ({ env }: ConfigContext) => ({
   connection: {
     client: 'postgres',
     connection: {
