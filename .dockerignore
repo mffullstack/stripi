@@ -1,0 +1,12 @@
+node_modules
+**/node_modules
+strapi-temp
+.git
+.cache
+.tmp
+build
+dist
+coverage
+.env
+.DS_Store
+npm-debug.log
