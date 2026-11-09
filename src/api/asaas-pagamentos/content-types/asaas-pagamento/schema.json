@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asaas_pagamentos",
+  "info": {
+    "singularName": "asaas-pagamento",
+    "pluralName": "asaas-pagamentos",
+    "displayName": "Asaas Pagamento"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asaas_payment_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "asaas_subscription_id": {
+      "type": "string",
+      "required": true
+    },
+    "user_id_login": {
+      "type": "string",
+      "required": true
+    },
+    "valor": {
+      "type": "decimal",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["PENDING", "RECEIVED", "OVERDUE", "CANCELLED"],
+      "required": true
+    },
+    "tipo_cobranca": {
+      "type": "enumeration",
+      "enum": ["PIX", "BOLETO", "CREDIT_CARD"],
+      "required": true
+    },
+    "data_vencimento": {
+      "type": "date",
+      "required": true
+    },
+    "data_pagamento": {
+      "type": "datetime",
+      "required": false
+    },
+    "url_pagamento": {
+      "type": "string",
+      "required": false
+    },
+    "criado_em": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}
