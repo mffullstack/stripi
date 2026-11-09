@@ -1,19 +1,25 @@
 
-import type { Core } from '@strapi/strapi';
+type Env = {
+  (key: string, defaultValue?: string): string;
+  int(key: string, defaultValue?: number): number;
+};
 
-export default ({ env }: Core.Config.Shared.ConfigParams) => ({
+type ConfigContext = {
+  env: Env;
+};
+
+export default ({ env }: ConfigContext) => ({
   connection: {
     client: 'postgres',
     connection: {
       host: env('DATABASE_HOST'),
       port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'neondb'),
+      database: env('DATABASE_NAME'),
       user: env('DATABASE_USERNAME'),
       password: env('DATABASE_PASSWORD'),
       ssl: {
         rejectUnauthorized: false,
       },
-      schema: env('DATABASE_SCHEMA', 'public'),
     },
     pool: {
       min: 0,
