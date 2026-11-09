@@ -12,52 +12,52 @@
   "pluginOptions": {},
   "attributes": {
     "asaas_customer_id": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "unique": true
     },
     "user_id_login": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "nome": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "email": {
-      "type": "email",
+      "type": "text",
       "required": true
     },
     "cpf_cnpj": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "telefone": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "endereco": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "numero": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "bairro": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "cidade": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "estado": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "cep": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "criado_em": {

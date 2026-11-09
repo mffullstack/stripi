@@ -12,16 +12,16 @@
   "pluginOptions": {},
   "attributes": {
     "asaas_payment_id": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "unique": true
     },
     "asaas_subscription_id": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "user_id_login": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "valor": {
@@ -47,7 +47,7 @@
       "required": false
     },
     "url_pagamento": {
-      "type": "string",
+      "type": "text",
       "required": false
     },
     "criado_em": {

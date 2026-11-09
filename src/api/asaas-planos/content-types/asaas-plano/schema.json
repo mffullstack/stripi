@@ -12,16 +12,16 @@
   "pluginOptions": {},
   "attributes": {
     "asaas_subscription_id": {
-      "type": "string",
+      "type": "text",
       "required": true,
       "unique": true
     },
     "asaas_customer_id": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "user_id_login": {
-      "type": "string",
+      "type": "text",
       "required": true
     },
     "valor": {
