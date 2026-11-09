@@ -1,7 +1,3 @@
-/**
- * asaas-plano route
- */
-
 import { factories } from '@strapi/strapi';
 
 export default factories.createCoreRouter('api::asaas-plano.asaas-plano' as any);
