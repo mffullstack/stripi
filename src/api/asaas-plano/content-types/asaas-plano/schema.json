@@ -33,12 +33,6 @@
       "enum": ["PIX", "BOLETO", "CREDIT_CARD"],
       "required": true
     },
-    "status": {
-      "type": "enumeration",
-      "enum": ["PENDING", "ACTIVE", "PAUSED", "CANCELLED"],
-      "default": "PENDING",
-      "required": true
-    },
     "proxima_cobranca": {
       "type": "date",
       "required": false
