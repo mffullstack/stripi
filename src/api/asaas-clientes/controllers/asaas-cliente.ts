@@ -4,4 +4,4 @@
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreController('api::asaas-cliente.asaas-cliente');
+export default factories.createCoreController('api::asaas-cliente.asaas-cliente' as any);

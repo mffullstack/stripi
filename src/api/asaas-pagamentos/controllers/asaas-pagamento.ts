@@ -4,4 +4,4 @@
 
 import { factories } from '@strapi/strapi';
 
-export default factories.createCoreController('api::asaas-pagamento.asaas-pagamento');
+export default factories.createCoreController('api::asaas-pagamento.asaas-pagamento' as any);
