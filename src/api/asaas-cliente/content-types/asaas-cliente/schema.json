@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asaas_clientes",
+  "info": {
+    "singularName": "asaas-cliente",
+    "pluralName": "asaas-clientes",
+    "displayName": "Asaas Cliente"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asaas_customer_id": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "user_id_login": {
+      "type": "text",
+      "required": true
+    },
+    "nome": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "text",
+      "required": true
+    },
+    "cpf_cnpj": {
+      "type": "text",
+      "required": false
+    },
+    "telefone": {
+      "type": "text",
+      "required": false
+    },
+    "endereco": {
+      "type": "text",
+      "required": false
+    },
+    "numero": {
+      "type": "text",
+      "required": false
+    },
+    "bairro": {
+      "type": "text",
+      "required": false
+    },
+    "cidade": {
+      "type": "text",
+      "required": false
+    },
+    "estado": {
+      "type": "text",
+      "required": false
+    },
+    "cep": {
+      "type": "text",
+      "required": false
+    },
+    "criado_em": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asaas_planos",
+  "info": {
+    "singularName": "asaas-plano",
+    "pluralName": "asaas-planos",
+    "displayName": "Asaas Plano"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "asaas_subscription_id": {
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "asaas_customer_id": {
+      "type": "text",
+      "required": true
+    },
+    "user_id_login": {
+      "type": "text",
+      "required": true
+    },
+    "valor": {
+      "type": "decimal",
+      "required": true
+    },
+    "billing_type": {
+      "type": "enumeration",
+      "enum": ["PIX", "BOLETO", "CREDIT_CARD"],
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["ACTIVE", "PAUSED", "CANCELLED"],
+      "default": "ACTIVE",
+      "required": true
+    },
+    "proxima_cobranca": {
+      "type": "date",
+      "required": false
+    },
+    "criado_em": {
+      "type": "datetime",
+      "required": true
+    },
+    "cancelado_em": {
+      "type": "datetime",
+      "required": false
+    }
+  }
+}
