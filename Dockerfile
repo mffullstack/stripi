@@ -1,7 +1,6 @@
 
 # ==========================================
 # STRAPI 5 + NODE 22 + NEON POSTGRESQL
-# PRODUÇÃO - RENDER
 # ==========================================
 
 FROM node:22-bookworm-slim
@@ -16,25 +15,20 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Copiar dependências
+# Copiar arquivos de dependências
 COPY package.json package-lock.json ./
 
-# Instalar dependências, incluindo devDependencies
+# Instalar dependências
 RUN npm ci --no-audit --no-fund
 
-# Copiar projeto
+# Copiar código do Strapi
 COPY . .
 
-# Configurações de produção
-ENV NODE_ENV=production
+# Configurações
+ENV NODE_ENV=development
 ENV HOST=0.0.0.0
-ENV PORT=10000
+ENV PORT=1337
 
-# Compilar painel administrativo
-RUN npm run build
+EXPOSE 1337
 
-# Porta do Render
-EXPOSE 10000
-
-# Iniciar Strapi em produção
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "develop"]
