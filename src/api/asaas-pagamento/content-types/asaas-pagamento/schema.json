@@ -28,7 +28,7 @@
       "type": "decimal",
       "required": true
     },
-    "status": {
+    "payment_status": {
       "type": "text",
       "required": true
     },
