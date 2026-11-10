@@ -30,7 +30,19 @@
     },
     "status": {
       "type": "enumeration",
-      "enum": ["PENDING", "RECEIVED", "OVERDUE", "CANCELLED"],
+      "enum": ["PENDING",
+    "CONFIRMED",
+    "RECEIVED",
+    "OVERDUE",
+    "REFUNDED",
+    "RECEIVED_IN_CASH",
+    "REFUND_REQUESTED",
+    "REFUND_IN_PROGRESS",
+    "CHARGEBACK_REQUESTED",
+    "CHARGEBACK_DISPUTE",
+    "AWAITING_CHARGEBACK_REVERSAL",
+    "DUNNING_REQUESTED",
+    "DUNNING_RECEIVED", "CANCELLED"],
       "required": true
     },
     "tipo_cobranca": {
